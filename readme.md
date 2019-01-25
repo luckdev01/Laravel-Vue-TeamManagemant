@@ -12,15 +12,15 @@ $ composer install
 ```sh
 $ cp .env.example .env
 ```
-* Generate a new application key  
-```sh 
+* Generate a new application key
+```sh
 $ php artisan key:generate
 ```
 >## 1. Setup your database connection in your `.env` file
 
->## 2. Create a virtual host under the name: dev.teamManagement.com 
+>## 2. Create a virtual host under the name: dev.teamManagement.com
 
-### If you're using nginx 
+### If you're using nginx
 ```sh
 server {
     listen 80;
@@ -47,9 +47,9 @@ server {
  BASE_API: '"http://127.0.0.1:8000/api/"'
  ```
 
->## 3. Run the migrations with the factory to fill the db  
+>## 3. Run the migrations with the factory to fill the db
 
-```sh 
+```sh
 $ php artisan migrate --seed
 ```
 
@@ -66,13 +66,13 @@ $ php -S localhost:8000 -t public
 
 * Then navigate to the server
 ```sh
-dev.teamManagement.com 
+dev.teamManagement.com
 or
 [your custom server address]
 ```
-* Admin credentials 
+* Admin credentials
 ```
-email: anass.nadir@gmail.com
+email: test@gmail.com
 password: 123456
 ```
 * Or try to connect with a member's account to see the difference

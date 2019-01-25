@@ -21,6 +21,9 @@ class CreateInterviewsTable extends Migration
             $table->softDeletes();
             $table->timestamps();
         });
+        Schema::table('interviews', function (Blueprint $table) {
+            $table->string('synthesis', 255)->change();
+        });
     }
 
     /**
